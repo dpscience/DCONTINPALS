@@ -117,5 +117,7 @@ For more details see [GNU General Public License v3](https://www.gnu.org/license
 
 # References 
 [1] [S.W. Provencher, CONTIN: A general purpose constrained regularization program for inverting noisy linear algebraic and integral equations, Comput. Phys. Commun. 27 (1982) 229–242. doi:10.1016/0010-4655(82)90174-6.](https://doi.org/10.1016/0010-4655(82)90174-6)<br>
+
 [2] [R.B. Gregory, Y. Zhu, Analysis of positron annihilation lifetime data by numerical laplace inversion with the program CONTIN, Nucl. Instruments Methods Phys. Res. Sect. A Accel. Spectrometers, Detect. Assoc. Equip. 290 (1990) 172–182. doi:10.1016/0168-9002(90)90358-D.](https://doi.org/10.1016/0168-9002(90)90358-D).<br>
+
 [3] [R.B. Gregory, Analysis of positron annihilation lifetime data by numerical Laplace inversion: Corrections for source terms and zero-time shift errors, Nucl. Inst. Methods Phys. Res. A. 302 (1991) 496–507. doi:10.1016/0168-9002(91)90367-Y.](https://doi.org/10.1016/0168-9002(91)90367-Y)
