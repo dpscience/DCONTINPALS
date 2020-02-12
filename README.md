@@ -1,4 +1,4 @@
-# DCONTINPALS
+# pyDCONTINPALS
 Copyright (c) 2020 Danny Petschke (danny.petschke@uni-wuerzburg.de). All rights reserved.<br><br>
 
 pyDCONTINPALS - A PYTHON program for running the historical FORTRAN code CONTIN-PALS initially provided by Provencher (1982) [1] and Gregory et al. (1990) [2,3]. CONTIN-PALS program solves Fredholm integral equations with convoluted exponential decays as kernels of the type that occur in the analysis of Positron Annihilation Lifetime Spectra (PALS).<br><br>
