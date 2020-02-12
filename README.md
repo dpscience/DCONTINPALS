@@ -57,12 +57,12 @@ Before citing this program <b>pyDCONTINPALS</b> you need at least to cite the in
 
 [R.B. Gregory, Y. Zhu, Analysis of positron annihilation lifetime data by numerical laplace inversion with the program CONTIN, Nucl. Instruments Methods Phys. Res. Sect. A Accel. Spectrometers, Detect. Assoc. Equip. 290 (1990) 172–182. doi:10.1016/0168-9002(90)90358-D.](https://doi.org/10.1016/0168-9002(90)90358-D).
 
-You can cite all versions of pyDCONTINPALS by using the <b>DOI 10.5281/zenodo.1255105</b>. This DOI represents all versions, and will always resolve to the latest one.<br>
+You can cite all versions of pyDCONTINPALS by using the <b>DOI XX.XXX/zenodo.XXXXXX</b>. This DOI represents all versions, and will always resolve to the latest one.<br>
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1255105.svg)](https://doi.org/10.5281/zenodo.1255105)
+[![DOI](XXX)](XXX)
 
 ## v1.x
-pyDCONTINPALS v1.0:<br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1255106.svg)](https://doi.org/10.5281/zenodo.1255106)<br>
+pyDCONTINPALS v1.0:<br>[![DOI](XXX)](XXX)<br>
 
 # Requirements
 - [NumPy](http://www.numpy.org/) 
