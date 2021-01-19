@@ -1,19 +1,19 @@
 # pyDCONTINPALS
 Copyright (c) 2020 Danny Petschke (danny.petschke@uni-wuerzburg.de). All rights reserved.<br><br>
 
-pyDCONTINPALS - A PYTHON program for running the historical FORTRAN code CONTIN-PALS initially provided by Provencher (1982) [1] and Gregory et al. (1990) [2,3]. CONTIN-PALS program solves Fredholm integral equations with convoluted exponential decays as kernels of the type that occur in the analysis of Positron Annihilation Lifetime Spectra (PALS).<br><br>
+pyDCONTINPALS - A Python program for running the historical FORTRAN code CONTIN-PALS initially provided by Provencher (1982) [1] and Gregory et al. (1990) [2,3]. CONTIN-PALS program solves Fredholm integral equations with convoluted exponential decays as kernels of the type that occur in the analysis of Positron Annihilation Lifetime Spectra (PALS).<br><br>
 
 ![demo](/demo.png)
 
 # Quickstart Guide
 
-pyDCONTINPALS consists of 3 files ...
+`pyDCONTINPALS` consists of 3 files ...<br>
 
-- pyDCONTINPALS.py
-- pyDCONTINPALSInput.py
-- pyDCONTINPALSSpecSimulator.py
+`pyDCONTINPALS.py`<br>
+`pyDCONTINPALSInput.py`<br>
+`pyDCONTINPALSSpecSimulator.py`<br>
 
-1. edit (or leave it as it is) <b>pyDCONTINPALSInput.py </b>:
+1. <b>edit</b> (or leave it as it is) `pyDCONTINPALSInput.py`:
 
 ```python
 __demoMode                  = True # disable if running from real data
@@ -47,9 +47,9 @@ __channelResolutionInPs     = 50.0  # >= 10 ... Note: this value is internally l
 __bkgrd_startIndex          = 800;
 __bkgrd_count               = 190; # number of channels with respect to the 'startIndex'
 ```
-2. execute <b>pyDCONTINPALS.py</b> (note: all binaries must be placed into the same folder!)<br>
+2. <b>execute</b> `pyDCONTINPALS.py` (note: all binary files must be placed into the same folder!)<br>
 
-3. finished. You should see the results as shown above in the figure if you are running in the demo mode <i>(__demoMode = True)</i>.
+3. <b>finished</b>. You should see the results as shown above in the figure when running in the demo mode <i>(__demoMode = True)</i>.
 
 # How to cite this Program?
 
@@ -57,18 +57,30 @@ Before citing this program <b>pyDCONTINPALS</b> you need at least to cite the in
 
 [R.B. Gregory, Y. Zhu, Analysis of positron annihilation lifetime data by numerical laplace inversion with the program CONTIN, Nucl. Instruments Methods Phys. Res. Sect. A Accel. Spectrometers, Detect. Assoc. Equip. 290 (1990) 172–182. doi:10.1016/0168-9002(90)90358-D.](https://doi.org/10.1016/0168-9002(90)90358-D).
 
-You can cite all versions of pyDCONTINPALS by using the <b>DOI 10.5281/zenodo.3665474</b>. This DOI represents all versions, and will always resolve to the latest one.<br>
+```latex
+@article {Gregory1990,
+abstract = {The performance of the program CONTIN [Stephen W. Provencher, Comput. Phys. Commun. 27 (1982) 229], modified to solve Fredholm integral equations with convoluted kernels of the type that occur in the deconvolution and analysis of positron annihilation lifetime data, is investigated with computer-simulated test data. The method avoids direct determination of the instrument resolution function by employing the decay curve of a reference material with a well-known single lifetime. CONTIN employs a constrained, regularized least-squares analysis to calculate a continuous annihilation-rate probability density function (pdf) which is the most parsimonious solution that is consistent with the experimental data and prior knowledge. The performance of the algorithm for extracting positron annihilation lifetime information was evaluated by using several measures of the information content of the data described by Schrader and Usmar [in: Positron Annihilation Studies of Fluids, ed. S. Sharma (World Scientific, Singapore, 1988) p. 215]. The quality of the CONTIN reconstruction of the annihilation-rate pdf is strongly dependent on the information content of the data and is greatly improved as the total number of counts in the data set is increased. Nevertheless, the method provides excellent estimates of the intensities and mean lifetimes of peaks in the annihilation-rate pdf, even when the total counts in the data set are relatively low (105–106). The sensitivity of the algorithm to systematic errors in the data, including errors in the instrument resolution function, shifts in the positron of the zero-time channel of the sample and reference data and contamination of the reference decay by additional lifetime components was also evaluated. Errors in the FWHM of the instrument resolution function and shifts in the zero time channel as small as 110to15 of the channel width of the instrument generate additional spurious peaks in the annihilation-rate pdf and introduce errors in the lifetime parameters of the short-lived components.},
+author = {Gregory, Roger B. and Zhu, Yongkang},
+doi = {10.1016/0168-9002(90)90358-D},
+issn = {0168-9002},
+journal = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+month = {may},
+number = {1},
+pages = {172--182},
+publisher = {North-Holland},
+title = {{Analysis of positron annihilation lifetime data by numerical Laplace inversion with the program CONTIN}},
+url = {https://www.sciencedirect.com/science/article/pii/016890029090358D},
+volume = {290},
+year = {1990}
+}
+```
+
+You can cite all versions of `pyDCONTINPALS` by using the <b>DOI 10.5281/zenodo.3665474</b>. This DOI represents all versions, and will always resolve to the latest one.<br>
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3665474.svg)](https://doi.org/10.5281/zenodo.3665475)
 
 ## v1.x
 pyDCONTINPALS v1.0:<br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3665475.svg)](https://doi.org/10.5281/zenodo.3665475)<br>
-
-# Requirements
-- [NumPy](http://www.numpy.org/) 
-- [matplotlib](https://matplotlib.org/)<br>
-
-#### [WinPython x64](https://sourceforge.net/projects/winpython/) meets all requirements. 
 
 # License of pyDCONTINPALS (BSD-3-Clause)
 
