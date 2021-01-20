@@ -81,7 +81,7 @@ You can cite all released software versions by using the <b>DOI 10.5281/zenodo.3
 <b>pyDCONTINPALS v1.0</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3665475.svg)](https://doi.org/10.5281/zenodo.3665475)<br>
  
  # License of (py)DCONTINPALS (GNU General Public License) 
- Copyright (c) 2020-2021 Danny Petschke (danny.petschke@uni-wuerzburg.de) All rights reserved.<br><br>
+ Copyright (c) 2020-2021 Danny Petschke (danny.petschke@uni-wuerzburg.de) All rights reserved.<br>
 
 <p align="justify">This program is free software: you can redistribute it and/or modify<br>
 it under the terms of the GNU General Public License as published by<br>
