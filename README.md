@@ -1,7 +1,7 @@
 
 ![badge-OS](https://img.shields.io/badge/OS-Windows-blue)
 ![badge-language](https://img.shields.io/badge/language-Python-blue)
-![badge-license](https://img.shields.io/badge/license-BSD-blue)
+![badge-license](https://img.shields.io/badge/license-GNU-blue)
 
 Support this project and keep always updated about recent software releases, bug fixes and major improvements by [following on github](https://github.com/dpscience?tab=followers).
 
@@ -11,7 +11,7 @@ Support this project and keep always updated about recent software releases, bug
 
 # pyDCONTINPALS
 
-Copyright (c) 2020 Danny Petschke (danny.petschke@uni-wuerzburg.de). All rights reserved.<br><br>
+Copyright (c) 2020-2021 Danny Petschke (danny.petschke@uni-wuerzburg.de). All rights reserved.<br><br>
 <b>pyDCONTINPALS</b> - A program in Python for running the historical FORTRAN code CONTIN-PALS initially provided by [Provencher (1982)](https://www.sciencedirect.com/science/article/abs/pii/0010465582901746) and [Gregory et al. (1990/](https://www.sciencedirect.com/science/article/abs/pii/016890029090358D)[1991)](https://www.sciencedirect.com/science/article/abs/pii/016890029190367Y). CONTIN-PALS program solves Fredholm integral equations with convoluted exponential decays as kernels of the type that occur in the analysis of Positron Annihilation Lifetime Spectra (PALS).<br>
 
 ![demo](/demo.png)
@@ -78,40 +78,9 @@ You can cite all released software versions by using the <b>DOI 10.5281/zenodo.3
 
 ## ``v1.x``
 <b>pyDCONTINPALS v1.0</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3665475.svg)](https://doi.org/10.5281/zenodo.3665475)<br>
-
-# License of pyDCONTINPALS (BSD-3-Clause)
-
-Copyright (c) 2020 Danny Petschke (danny.petschke@uni-wuerzburg.de). All rights reserved.<br><br>
-
-Redistribution and use in source and binary forms, with or without modification,<br> 
-are permitted provided that the following conditions are met:<br><br>
-
- 1. Redistributions of source code must retain the above copyright notice<br>
-    this list of conditions and the following disclaimer.<br><br>
-
- 2. Redistributions in binary form must reproduce the above copyright notice,<br> 
-    this list of conditions and the following disclaimer in the documentation<br> 
-    and/or other materials provided with the distribution.<br><br>
-
- 3. Neither the name of the copyright holder "Danny Petschke" nor the names of<br> 
-    its contributors may be used to endorse or promote products derived from <br>
-    this software without specific prior written permission.<br><br>
-
-
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS<br> 
- OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF<br> 
- MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE<br> 
- COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,<br> 
- EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF<br> 
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)<br> 
- HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR<br> 
- TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,<br> 
- EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
  
- see also [BSD-3-Clause License](https://opensource.org/licenses/BSD-3-Clause)
- 
- # License of DCONTINPALS (GNU General Public License) 
- Copyright (c) 2020 Danny Petschke (danny.petschke@uni-wuerzburg.de) All rights reserved.<br><br>
+ # License of (py)DCONTINPALS (GNU General Public License) 
+ Copyright (c) 2020-2021 Danny Petschke (danny.petschke@uni-wuerzburg.de) All rights reserved.<br><br>
 
 <p align="justify">This program is free software: you can redistribute it and/or modify<br>
 it under the terms of the GNU General Public License as published by<br>
