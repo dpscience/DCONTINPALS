@@ -1,7 +1,4 @@
-
-![badge-OS](https://img.shields.io/badge/OS-Windows-blue)
-![badge-language](https://img.shields.io/badge/language-Python-blue)
-![badge-license](https://img.shields.io/badge/license-GNU-blue)
+![badge-OS](https://img.shields.io/badge/OS-tested%20under%20Windows%2010-brightgreen)
 
 Support this project and keep always updated about recent software releases, bug fixes and major improvements by [following on github](https://github.com/dpscience?tab=followers).
 
@@ -10,6 +7,10 @@ Support this project and keep always updated about recent software releases, bug
 ![badge-forks](https://img.shields.io/github/forks/dpscience/DCONTINPALS?style=social)
 
 # pyDCONTINPALS
+
+![badge-OS](https://img.shields.io/badge/OS-Windows-blue)
+![badge-language](https://img.shields.io/badge/language-Python-blue)
+![badge-license](https://img.shields.io/badge/license-GPL-blue)
 
 Copyright (c) 2020-2021 Danny Petschke (danny.petschke@uni-wuerzburg.de). All rights reserved.<br><br>
 <b>pyDCONTINPALS</b> - A program in Python for running the historical FORTRAN code CONTIN-PALS initially provided by [Provencher (1982)](https://www.sciencedirect.com/science/article/abs/pii/0010465582901746) and [Gregory et al. (1990/](https://www.sciencedirect.com/science/article/abs/pii/016890029090358D)[1991)](https://www.sciencedirect.com/science/article/abs/pii/016890029190367Y). CONTIN-PALS program solves Fredholm integral equations with convoluted exponential decays as kernels of the type that occur in the analysis of Positron Annihilation Lifetime Spectra (PALS).<br>
