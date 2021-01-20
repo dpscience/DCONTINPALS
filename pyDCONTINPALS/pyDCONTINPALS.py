@@ -1,35 +1,23 @@
 # -*- coding: utf-8 -*-
 
-VERSION_HANDSHAKE = 1 # v1.0
+VERSION_HANDSHAKE = 1 # v1.0x
 
 #*************************************************************************************************
+#**")
+#** Copyright (c) 2020-2021 Danny Petschke. All rights reserved.
+#**")
+#** This program is free software: you can redistribute it and/or modify
+#** it under the terms of the GNU General Public License as published by
+#** the Free Software Foundation, either version 3 of the License, or
+#** (at your option) any later version.
 #**
-#** Copyright (c) 2020 Danny Petschke. All rights reserved.
-#** 
-#** Redistribution and use in source and binary forms, with or without modification, 
-#** are permitted provided that the following conditions are met:
-#**
-#** 1. Redistributions of source code must retain the above copyright notice, 
-#**    this list of conditions and the following disclaimer.
-#**
-#** 2. Redistributions in binary form must reproduce the above copyright notice, 
-#**    this list of conditions and the following disclaimer in the documentation 
-#**    and/or other materials provided with the distribution.
-#**
-#** 3. Neither the name of the copyright holder "Danny Petschke" nor the names of its  
-#**    contributors may be used to endorse or promote products derived from this software  
-#**    without specific prior written permission.
-#**
-#**
-#** THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS 
-#** OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
-#** MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE 
-#** COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
-#** EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
-#** SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) 
-#** HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR 
-#** TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, 
-#** EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#** This program is distributed in the hope that it will be useful,
+#** but WITHOUT ANY WARRANTY; without even the implied warranty of
+#** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#** GNU General Public License for more details.
+#**")
+#** You should have received a copy of the GNU General Public License
+#** along with this program. If not, see http://www.gnu.org/licenses/.
 #**
 #** Contact: danny.petschke@uni-wuerzburg.de
 #**
@@ -45,9 +33,9 @@ import pyDCONTINPALSSpecSimulator as specSimulator
 import pyDCONTINPALSInput as userInput
 
 def __information__():
-    print("#****************** pyDCONTINPALS 1.0 (11.02.2020) *******************")
+    print("#********************* pyDCONTINPALS 1.01 (20.01.2021) *********************")
     print("#**")
-    print("#** Copyright (C) 2020 Danny Petschke")
+    print("#** Copyright (C) 2020-2021 Danny Petschke")
     print("#**")
     print("#** Contact: danny.petschke@uni-wuerzburg.de")
     print("#**")
@@ -56,32 +44,20 @@ def __information__():
 def __licence__():
     print("#*************************************************************************************************")
     print("#**")
-    print("#** Copyright (c) 2020 Danny Petschke. All rights reserved.")
+    print("#** Copyright (c) 2020-2021 Danny Petschke. All rights reserved.")
     print("#**")
-    print("#** Redistribution and use in source and binary forms, with or without modification,") 
-    print("#** are permitted provided that the following conditions are met:")
+    print("#** This program is free software: you can redistribute it and/or modify") 
+    print("#** it under the terms of the GNU General Public License as published by")
+    print("#** the Free Software Foundation, either version 3 of the License, or")
+    print("#** (at your option) any later version.")
     print("#**")
-    print("#** 1. Redistributions of source code must retain the above copyright notice,")
-    print("#**    this list of conditions and the following disclaimer.")
+    print("#** This program is distributed in the hope that it will be useful,") 
+    print("#** but WITHOUT ANY WARRANTY; without even the implied warranty of") 
+    print("#** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the")
+    print("#** GNU General Public License for more details.")  
     print("#**")
-    print("#** 2. Redistributions in binary form must reproduce the above copyright notice,") 
-    print("#**    this list of conditions and the following disclaimer in the documentation") 
-    print("#**    and/or other materials provided with the distribution.")
-    print("#**")
-    print("#** 3. Neither the name of the copyright holder ""Danny Petschke"" nor the names of its")  
-    print("#**    contributors may be used to endorse or promote products derived from this software")  
-    print("#**    without specific prior written permission.")
-    print("#**")
-    print("#**")
-    print("#** THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"" AND ANY EXPRESS") 
-    print("#** OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF") 
-    print("#** MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE") 
-    print("#** COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,") 
-    print("#** EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF") 
-    print("#** SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)") 
-    print("#** HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR") 
-    print("#** TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,") 
-    print("#** EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.")
+    print("#** You should have received a copy of the GNU General Public License")  
+    print("#** along with this program. If not, see http://www.gnu.org/licenses/.")
     print("#**")
     print("#** Contact: danny.petschke@uni-wuerzburg.de")
     print("#**")
