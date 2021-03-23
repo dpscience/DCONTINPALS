@@ -30,9 +30,15 @@ Copyright (c) 2020-2021 Danny Petschke (danny.petschke@uni-wuerzburg.de). All ri
 ```python
 __demoMode                  = True # disable if running from real data
 
-# NOTE: spectrum and IRF (or mono-exponential decay spectrum e.g. 207-Bi) data vectors require equal length!
+# NOTE: spectrum and IRF (or mono-exponential decay spectrum) data vectors require equal length!
+
+__roi_start                 = 0
+__roi_end                   = 7400
 
 # file path (and name) to the SPECTRUM data:
+
+__usingRefSpectrum          = True # if set to FALSE the '__irfXXX' related parameters are considered
+
 __filePathSpec              = 'testData/spectrum_10ps.dat'
 __specDataDelimiter         = '\t'
 
@@ -44,20 +50,27 @@ __refDataDelimiter          = '\t'
 __skipRows                  = 5;
 
 # fixed mono-decay component in units of picoseconds [ps] (1/lambda = tau):
-# Note: set to something like 1E-6 if you provide numerical IRF data as input such as recorded from 60-Co
-__tau_monoDecaySpec_in_ps   = 182.0  #[ps]
+
+# Note: set to something like 1E-6 if you provide numerical IRF data as input
+__tau_monoDecaySpec_in_ps   = 182.  #[ps]
+
+__t_zero                    = 2000             # channel number 
+__irf_fwhm                  = [270.04,498.63]  # [ps]
+__irf_intensity             = [0.9382,0.0618]  # [ps]
+__irf_t0                    = [0.,6.6]         # [ps]
 
 # grid of characteristic lifetimes with equally distributed grid points defining the resulting intensity spectrum
-__gridTau_start             = 50.0   # [ps]
+__gridTau_start             = 10.0   # [ps]
 __gridTau_stop              = 3000.0 # [ps]
 __gridPoints                = 100    # 10 ... 100 Note: this value is internally limited to 100 by CONTIN
 
 # channel/bin resolution [ps]
-__channelResolutionInPs     = 50.0  # >= 10 ... Note: this value is internally limited by CONTIN
+__channelResolutionInPs     = 5.  # >= 10 ... Note: this value is internally limited by CONTIN
+__binFactor                 = 1
 
 # background estimation:
-__bkgrd_startIndex          = 800;
-__bkgrd_count               = 190; # number of channels with respect to the 'startIndex'
+__bkgrd_startIndex          = 6500;
+__bkgrd_count               = 900; # number of channels with respect to the 'startIndex'
 ```
 * <b>execute</b> `pyDCONTINPALS.py`<br>
 
@@ -78,6 +91,7 @@ You can cite all released software versions by using the <b>DOI 10.5281/zenodo.3
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3665474.svg)](https://doi.org/10.5281/zenodo.3665475)
 
 ## ``v1.x``
+<b>pyDCONTINPALS v1.02</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4452238.svg)](https://doi.org/10.5281/zenodo.4452238)<br>
 <b>pyDCONTINPALS v1.01</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4452238.svg)](https://doi.org/10.5281/zenodo.4452238)<br>
 <b>pyDCONTINPALS v1.0</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3665475.svg)](https://doi.org/10.5281/zenodo.3665475)<br>
  
