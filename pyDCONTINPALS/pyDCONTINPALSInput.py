@@ -29,7 +29,8 @@ __roi_start                 = 0
 __roi_end                   = 7400
 
 # file path (and name) to the SPECTRUM data:
-__usingRefSpectrum          = True # if FALSE the '__irfXXX' related parameters are considered
+
+__usingRefSpectrum          = True # if set to FALSE the '__irfXXX' related parameters are considered
 
 __filePathSpec              = 'testData/spectrum_10ps.dat'
 __specDataDelimiter         = '\t'
@@ -42,13 +43,14 @@ __refDataDelimiter          = '\t'
 __skipRows                  = 5;
 
 # fixed mono-decay component in units of picoseconds [ps] (1/lambda = tau):
+
 # Note: set to something like 1E-6 if you provide numerical IRF data as input
 __tau_monoDecaySpec_in_ps   = 182.  #[ps]
 
-__t_zero                    = 2000
-__irf_fwhm                  = [270.04,498.63]
-__irf_intensity             = [0.9382,0.0618]
-__irf_t0                    = [0.,6.6]
+__t_zero                    = 2000             # channel number 
+__irf_fwhm                  = [270.04,498.63]  # [ps]
+__irf_intensity             = [0.9382,0.0618]  # [ps]
+__irf_t0                    = [0.,6.6]         # [ps]
 
 # grid of characteristic lifetimes with equally distributed grid points defining the resulting intensity spectrum
 __gridTau_start             = 10.0   # [ps]
