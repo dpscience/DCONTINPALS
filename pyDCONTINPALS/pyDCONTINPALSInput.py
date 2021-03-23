@@ -25,7 +25,12 @@ __demoMode                  = True # disable if running from real data
 
 # NOTE: spectrum and IRF (or mono-exponential decay spectrum) data vectors require equal length!
 
+__roi_start                 = 0
+__roi_end                   = 7400
+
 # file path (and name) to the SPECTRUM data:
+__usingRefSpectrum          = True # if FALSE the '__irfXXX' related parameters are considered
+
 __filePathSpec              = 'testData/spectrum_10ps.dat'
 __specDataDelimiter         = '\t'
 
@@ -38,16 +43,22 @@ __skipRows                  = 5;
 
 # fixed mono-decay component in units of picoseconds [ps] (1/lambda = tau):
 # Note: set to something like 1E-6 if you provide numerical IRF data as input
-__tau_monoDecaySpec_in_ps   = 182.0  #[ps]
+__tau_monoDecaySpec_in_ps   = 182.  #[ps]
+
+__t_zero                    = 2000
+__irf_fwhm                  = [270.04,498.63]
+__irf_intensity             = [0.9382,0.0618]
+__irf_t0                    = [0.,6.6]
 
 # grid of characteristic lifetimes with equally distributed grid points defining the resulting intensity spectrum
-__gridTau_start             = 50.0   # [ps]
+__gridTau_start             = 10.0   # [ps]
 __gridTau_stop              = 3000.0 # [ps]
 __gridPoints                = 100    # 10 ... 100 Note: this value is internally limited to 100 by CONTIN
 
 # channel/bin resolution [ps]
-__channelResolutionInPs     = 50.0  # >= 10 ... Note: this value is internally limited by CONTIN
+__channelResolutionInPs     = 5.  # >= 10 ... Note: this value is internally limited by CONTIN
+__binFactor                 = 1
 
 # background estimation:
-__bkgrd_startIndex          = 800;
-__bkgrd_count               = 190; # number of channels with respect to the 'startIndex'
+__bkgrd_startIndex          = 6500;
+__bkgrd_count               = 900; # number of channels with respect to the 'startIndex'
