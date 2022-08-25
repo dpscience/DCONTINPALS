@@ -35,9 +35,9 @@ import pyDCONTINPALSSpecSimulator as specSimulator
 import pyDCONTINPALSInput as userInput
 
 def __information__():
-    print("#********************* pyDCONTINPALS 1.02 (16.03.2021) *********************")
+    print("#********************* pyDCONTINPALS 1.03 (25.08.2022) *********************")
     print("#**")
-    print("#** Copyright (C) 2020-2021 Danny Petschke")
+    print("#** Copyright (C) 2020-2022 Dr. Danny Petschke")
     print("#**")
     print("#** Contact: danny.petschke@uni-wuerzburg.de")
     print("#**")
@@ -46,7 +46,7 @@ def __information__():
 def __licence__():
     print("#*************************************************************************************************")
     print("#**")
-    print("#** Copyright (c) 2020-2021 Danny Petschke. All rights reserved.")
+    print("#** Copyright (c) 2020-2022 Dr. Danny Petschke. All rights reserved.")
     print("#**")
     print("#** This program is free software: you can redistribute it and/or modify") 
     print("#** it under the terms of the GNU General Public License as published by")
@@ -147,7 +147,7 @@ if __name__ == '__main__':
                                                                     noise=True,
                                                                     noiseLevel=1.0)
         
-        specdata_ref = specSimulator.generateCompleteLTSpectrum(numberOfComponents=3,
+        specdata_ref = specSimulator.generateCompleteLTSpectrum(numberOfComponents=1,
                                                                     binWidth_in_ps=binWidth_in_ps, 
                                                                     integralCounts=5000000, 
                                                                     constBkgrdCounts=5, 
@@ -221,6 +221,7 @@ if __name__ == '__main__':
     numberOfBins = len(spec_data_roi)
         
     # catch general limitations given by CONTIN-PALS
+    
     assert numberOfBins <= 4000 and numberOfBins >= 10 
     assert gridPoints >= 10 and gridPoints <= 100
     assert binWidth_in_ps >= 10.0

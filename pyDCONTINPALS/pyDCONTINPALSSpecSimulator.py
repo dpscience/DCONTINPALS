@@ -2,7 +2,7 @@
 
 #*************************************************************************************************
 #**")
-#** Copyright (c) 2020-2021 Danny Petschke. All rights reserved.
+#** Copyright (c) 2020-2022 Dr. Danny Petschke. All rights reserved.
 #**")
 #** This program is free software: you can redistribute it and/or modify
 #** it under the terms of the GNU General Public License as published by
