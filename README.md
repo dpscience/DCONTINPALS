@@ -58,7 +58,7 @@ __skipRows                  = 5;
 
 __tau_monoDecaySpec_in_ps   = 182.  # [ps]
 
-# used to simulate the IRF in case of '__demoMode' == True:
+# used to model the IRF data in case '__usingRefSpectrum' = False:
 
 __t_zero                    = 2000             # channel number 
 __irf_fwhm                  = [270.04,498.63]  # [ps]
