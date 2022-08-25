@@ -1,4 +1,5 @@
 ![badge-OS](https://img.shields.io/badge/OS-tested%20under%20Windows%2010-brightgreen)
+![badge-OS](https://img.shields.io/badge/OS-tested%20under%20Windows%2011-brightgreen)
 
 Support this project and keep always updated about recent software releases, bug fixes and major improvements by [following on github](https://github.com/dpscience?tab=followers).
 
@@ -12,10 +13,10 @@ Support this project and keep always updated about recent software releases, bug
 ![badge-language](https://img.shields.io/badge/language-Python-blue)
 ![badge-license](https://img.shields.io/badge/license-GPL-blue)
 
-Copyright (c) 2020-2021 Danny Petschke (danny.petschke@uni-wuerzburg.de). All rights reserved.<br><br>
+Copyright (c) 2020-2022 Dr. Danny Petschke (danny.petschke@uni-wuerzburg.de). All rights reserved.<br><br>
 <b>pyDCONTINPALS</b> - A program in Python for running the historical FORTRAN code CONTIN-PALS initially provided by [Provencher (1982)](https://www.sciencedirect.com/science/article/abs/pii/0010465582901746) and [Gregory et al. (1990/](https://www.sciencedirect.com/science/article/abs/pii/016890029090358D)[1991)](https://www.sciencedirect.com/science/article/abs/pii/016890029190367Y). CONTIN-PALS program solves Fredholm integral equations with convoluted exponential decays as kernels of the type that occur in the analysis of Positron Annihilation Lifetime Spectra (PALS).<br>
 
-![demo](/demo.png)
+![demo](https://github.com/dpscience/DCONTINPALS/blob/cef7dea07b87d1b878eec602a3c070a8d5555636/demo.png)
 
 # Quickstart Guide
 
@@ -30,10 +31,10 @@ Copyright (c) 2020-2021 Danny Petschke (danny.petschke@uni-wuerzburg.de). All ri
 ```python
 __demoMode                  = True # disable if running from real data
 
-# NOTE: spectrum and IRF (or mono-exponential decay spectrum) data vectors require equal length!
+# NOTE: SPECTRUM and IRF (or mono-exponential decay spectrum) data vectors require equal length!
 
 __roi_start                 = 0
-__roi_end                   = 7400
+__roi_end                   = 7400 # Note: number of channels is internally limited by CONTIN to <= 4000, so adjust the '__binFactor' in order to fit the given number of channels into this range
 
 # file path (and name) to the SPECTRUM data:
 
@@ -43,34 +44,42 @@ __filePathSpec              = 'testData/spectrum_10ps.dat'
 __specDataDelimiter         = '\t'
 
 # file path (and name) to the IRF data:
+
 __filePathRefOrIRFSpec      = 'testData/ref_10ps.dat'
 __refDataDelimiter          = '\t'
 
-# define the number of rows, which should be skipped during the import (e.g. for ignoring the header entries):
+# define the number of rows to be skipped during the import of the data (e.g. for ignoring the header entries):
+
 __skipRows                  = 5;
 
 # fixed mono-decay component in units of picoseconds [ps] (1/lambda = tau):
 
-# Note: set to something like 1E-6 if you provide numerical IRF data as input
-__tau_monoDecaySpec_in_ps   = 182.  #[ps]
+# Note: set to values below 1E-6 if you are providing numerical IRF data as input otherwise the decay rate in [ps]: 
+
+__tau_monoDecaySpec_in_ps   = 182.  # [ps]
+
+# used to simulate the IRF in case of '__demoMode' == True:
 
 __t_zero                    = 2000             # channel number 
 __irf_fwhm                  = [270.04,498.63]  # [ps]
 __irf_intensity             = [0.9382,0.0618]  # [ps]
 __irf_t0                    = [0.,6.6]         # [ps]
 
-# grid of characteristic lifetimes with equally distributed grid points defining the resulting intensity spectrum
+# grid of characteristic lifetimes with equally distributed grid points defining the resulting intensity spectrum to be expected as output:
+
 __gridTau_start             = 10.0   # [ps]
 __gridTau_stop              = 3000.0 # [ps]
-__gridPoints                = 100    # 10 ... 100 Note: this value is internally limited to 100 by CONTIN
+__gridPoints                = 100    # 10 ... 100 Note: this value is internally limited by CONTIN
 
-# channel/bin resolution [ps]
-__channelResolutionInPs     = 5.  # >= 10 ... Note: this value is internally limited by CONTIN
-__binFactor                 = 1
+# channel/bin resolution [ps]:
 
-# background estimation:
+__channelResolutionInPs     = 10. # >= 10 ... Note: this value is internally limited by CONTIN. If lower, increase '__binFactor' to fit into this range
+__binFactor                 = 2   # Note: number of channels is internally limited by CONTIN to <= 4000, so adjust the '__binFactor' in order to fit the given number of channels into this range
+
+# background estimation/calculation region:
+
 __bkgrd_startIndex          = 6500;
-__bkgrd_count               = 900; # number of channels with respect to the 'startIndex'
+__bkgrd_count               = 900; # number of channels with respect to the 'startIndex''
 ```
 * <b>execute</b> `pyDCONTINPALS.py`<br>
 
@@ -91,12 +100,13 @@ You can cite all released software versions by using the <b>DOI 10.5281/zenodo.3
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3665474.svg)](https://doi.org/10.5281/zenodo.3665475)
 
 ## ``v1.x``
+<b>pyDCONTINPALS v1.03</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4630108.svg)](https://doi.org/10.5281/zenodo.4630108)<br>
 <b>pyDCONTINPALS v1.02</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4630108.svg)](https://doi.org/10.5281/zenodo.4630108)<br>
 <b>pyDCONTINPALS v1.01</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4452238.svg)](https://doi.org/10.5281/zenodo.4452238)<br>
 <b>pyDCONTINPALS v1.0</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3665475.svg)](https://doi.org/10.5281/zenodo.3665475)<br>
  
  # License of (py)DCONTINPALS (GNU General Public License) 
- Copyright (c) 2020-2021 Danny Petschke (danny.petschke@uni-wuerzburg.de) All rights reserved.<br>
+ Copyright (c) 2020-2022 Dr. Danny Petschke (danny.petschke@uni-wuerzburg.de) All rights reserved.<br>
 
 <p align="justify">This program is free software: you can redistribute it and/or modify<br>
 it under the terms of the GNU General Public License as published by<br>
