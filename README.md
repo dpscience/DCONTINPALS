@@ -13,7 +13,7 @@ Support this project and keep always updated about recent software releases, bug
 ![badge-language](https://img.shields.io/badge/language-Python-blue)
 ![badge-license](https://img.shields.io/badge/license-GPL-blue)
 
-Copyright (c) 2020-2022 Dr. Danny Petschke (danny.petschke@uni-wuerzburg.de). All rights reserved.<br><br>
+Copyright (c) 2020-2023 Dr. Danny Petschke (danny.petschke@uni-wuerzburg.de). All rights reserved.<br><br>
 <b>pyDCONTINPALS</b> - A program in Python for running the historical FORTRAN code CONTIN-PALS initially provided by [Provencher (1982)](https://www.sciencedirect.com/science/article/abs/pii/0010465582901746) and [Gregory et al. (1990/](https://www.sciencedirect.com/science/article/abs/pii/016890029090358D)[1991)](https://www.sciencedirect.com/science/article/abs/pii/016890029190367Y). CONTIN-PALS program solves Fredholm integral equations with convoluted exponential decays as kernels of the type that occur in the analysis of Positron Annihilation Lifetime Spectra (PALS).<br>
 
 ![demo](https://github.com/dpscience/DCONTINPALS/blob/cef7dea07b87d1b878eec602a3c070a8d5555636/demo.png)
@@ -100,13 +100,14 @@ You can cite all released software versions by using the <b>DOI 10.5281/zenodo.3
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3665474.svg)](https://doi.org/10.5281/zenodo.3665475)
 
 ## ``v1.x``
+<b>pyDCONTINPALS v1.04</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4630108.svg)](https://doi.org/10.5281/zenodo.7023157)<br>
 <b>pyDCONTINPALS v1.03</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4630108.svg)](https://doi.org/10.5281/zenodo.7023157)<br>
 <b>pyDCONTINPALS v1.02</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4630108.svg)](https://doi.org/10.5281/zenodo.4630108)<br>
 <b>pyDCONTINPALS v1.01</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4452238.svg)](https://doi.org/10.5281/zenodo.4452238)<br>
 <b>pyDCONTINPALS v1.0</b><br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3665475.svg)](https://doi.org/10.5281/zenodo.3665475)<br>
  
  # License of (py)DCONTINPALS (GNU General Public License) 
- Copyright (c) 2020-2022 Dr. Danny Petschke (danny.petschke@uni-wuerzburg.de) All rights reserved.<br>
+ Copyright (c) 2020-2023 Dr. Danny Petschke (danny.petschke@uni-wuerzburg.de) All rights reserved.<br>
 
 <p align="justify">This program is free software: you can redistribute it and/or modify<br>
 it under the terms of the GNU General Public License as published by<br>
